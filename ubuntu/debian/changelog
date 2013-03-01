@@ -1,6 +1,6 @@
-drcsim-prerelease (2.1.0-1~precise) precise; urgency=high
+drcsim-prerelease (2.2.0-1~precise) precise; urgency=high
  
-  * pre-release 2.0.4
+  * pre-release 2.2.0
  
  -- Brian Gerkey <gerkey@osrfoundation.org>  Wed, 20 Nov 2012 16:20:00 -0700
 
