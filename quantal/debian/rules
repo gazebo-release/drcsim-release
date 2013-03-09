@@ -22,6 +22,7 @@ override_dh_auto_configure:
 override_dh_auto_build:
 	. "/opt/ros/groovy/setup.sh" && \
 	. "/usr/share/gazebo/setup.sh" && \
+	rosdep update && \
 	dh_auto_build -- VERBOSE=1
 
 override_dh_shlibdeps:
