@@ -1,27 +1,27 @@
-Source: drcsim
+Source: drcsim-nightly
 Standards-Version: 3.9.3
 Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
 Section: devel
 Priority: extra
-Build-Depends: cmake, debhelper (>= 7.0.50~), gazebo (>= 1.5.0), ros-groovy-pr2-mechanism, ros-groovy-std-msgs, ros-groovy-common-msgs, ros-groovy-image-common, ros-groovy-geometry, ros-groovy-pr2-controllers, ros-groovy-geometry-experimental, ros-groovy-robot-model-visualization, ros-groovy-image-pipeline, osrf-common, sandia-hand
+Build-Depends: cmake, debhelper (>= 7.0.50~), gazebo (>= 1.5.0), ros-groovy-pr2-mechanism, ros-groovy-std-msgs, ros-groovy-common-msgs, ros-groovy-image-common, ros-groovy-geometry, ros-groovy-pr2-controllers, ros-groovy-geometry-experimental, ros-groovy-robot-model-visualization, ros-groovy-image-pipeline, osrf-common-prerelease, sandia-hand-prerelease
 Homepage: http://theroboticschallenge.org
 
-Package: drcsim
+Package: drcsim-nightly
 Architecture: any
 Section: devel
 Priority: extra
-Depends: gazebo (>= 1.5.0), ros-groovy-pr2-mechanism, ros-groovy-std-msgs, ros-groovy-common-msgs, ros-groovy-image-common, ros-groovy-geometry, ros-groovy-pr2-controllers, ros-groovy-geometry-experimental, ros-groovy-robot-model-visualization, ros-groovy-image-pipeline, osrf-common, sandia-hand, ${misc:Depends}
-Conflicts: drcsim-prerelease, drcsim-nightly
+Depends: gazebo (>= 1.5.0), ros-groovy-pr2-mechanism, ros-groovy-std-msgs, ros-groovy-common-msgs, ros-groovy-image-common, ros-groovy-geometry, ros-groovy-pr2-controllers, ros-groovy-geometry-experimental, ros-groovy-robot-model-visualization, ros-groovy-image-pipeline, osrf-common-prerelease, sandia-hand-prerelease, ${misc:Depends}
+Conflicts: drcsim, drcsim-prerelease
 Description: 3D dynamics simulator for robotics
  Open source robot simulator designed to accurately simulate robots and worlds.
 Homepage: http://theroboticschallenge.org
 
-Package: drcsim-dbg
+Package: drcsim-nightly-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
     drcsim (= ${binary:Version}), ${misc:Depends}
-Conflicts: drcsim-prerelease-dbg, drcsim-nightly-dbg
+Conflicts: drcsim-dbg, drcsim-prerelease-dbg
 Description: debugging symbols for drcsim
  This package contains the debugging symbols for DRC simulator
