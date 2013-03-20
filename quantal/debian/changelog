@@ -1,17 +1,5 @@
-drcsim (2.2.0-2~quantal) quantal; urgency=high
- 
-  * Release 2.2.0-2
- 
- -- Jose Luis Rivero <jrivero@osrfoundation.org>  Mon, 11 Mar 2013 14:42:00 -0700
+drcsim-nightly (xxxxx) quantal; urgency=high
 
-drcsim (2.2.0-1~quantal) quantal; urgency=high
- 
-  * Release 2.2.0-1
- 
- -- Nate Koenig <nate@osrfoundation.org>  Mon, 11 Mar 2013 09:42:00 -0700
+  * Nightly release: xxxxx
 
-drcsim-prerelease (2.2.1-1~quantal) quantal; urgency=high
- 
-  * pre-release 2.2.1-1
- 
- -- Jose Luis Rivero <jrivero@osrfoundation.org>  Fri, 08 Mar 2013 11:40:00 -0700
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  ddddd
