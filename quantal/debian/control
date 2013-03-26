@@ -3,14 +3,14 @@ Standards-Version: 3.9.3
 Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
 Section: devel
 Priority: extra
-Build-Depends: cmake, debhelper (>= 7.0.50~), gazebo (>= 1.5.0), ros-groovy-pr2-mechanism, ros-groovy-std-msgs, ros-groovy-common-msgs, ros-groovy-image-common, ros-groovy-geometry, ros-groovy-pr2-controllers, ros-groovy-geometry-experimental, ros-groovy-robot-model-visualization, ros-groovy-image-pipeline, osrf-common-nightly, sandia-hand-nightly
+Build-Depends: cmake, debhelper (>= 7.0.50~), gazebo-nightly, ros-groovy-pr2-mechanism, ros-groovy-std-msgs, ros-groovy-common-msgs, ros-groovy-image-common, ros-groovy-geometry, ros-groovy-pr2-controllers, ros-groovy-geometry-experimental, ros-groovy-robot-model-visualization, ros-groovy-image-pipeline, osrf-common-nightly, sandia-hand-nightly
 Homepage: http://theroboticschallenge.org
 
 Package: drcsim-nightly
 Architecture: any
 Section: devel
 Priority: extra
-Depends: gazebo (>= 1.5.0), ros-groovy-pr2-mechanism, ros-groovy-std-msgs, ros-groovy-common-msgs, ros-groovy-image-common, ros-groovy-geometry, ros-groovy-pr2-controllers, ros-groovy-geometry-experimental, ros-groovy-robot-model-visualization, ros-groovy-image-pipeline, osrf-common-nightly, sandia-hand-nightly, ${misc:Depends}
+Depends: gazebo-nightly, ros-groovy-pr2-mechanism, ros-groovy-std-msgs, ros-groovy-common-msgs, ros-groovy-image-common, ros-groovy-geometry, ros-groovy-pr2-controllers, ros-groovy-geometry-experimental, ros-groovy-robot-model-visualization, ros-groovy-image-pipeline, osrf-common-nightly, sandia-hand-nightly, ${misc:Depends}
 Conflicts: drcsim, drcsim-prerelease
 Description: 3D dynamics simulator for robotics
  Open source robot simulator designed to accurately simulate robots and worlds.
