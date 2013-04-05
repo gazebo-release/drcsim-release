@@ -12,8 +12,8 @@ Section: devel
 Priority: extra
 Depends: gazebo-nightly, ros-fuerte-pr2-mechanism, ros-fuerte-std-msgs, ros-fuerte-common-msgs, ros-fuerte-image-common, ros-fuerte-geometry, ros-fuerte-pr2-controllers, ros-fuerte-geometry-experimental, ros-fuerte-robot-model-visualization, ros-fuerte-image-pipeline, osrf-common-nightly, sandia-hand-nightly, ${misc:Depends}
 Conflicts: drcsim, drcsim-prerelease
-Description: 3D dynamics simulator for robotics
- Open source robot simulator designed to accurately simulate robots and worlds.
+Description: Darpa Robotics Challengue (DRC) simulator
+ Building upon Gazebo simulator, the DRC Simulator, or DRCSim, comprises additional worlds, models, and code that is specifically required to simulate the DRC domain.
 Homepage: http://theroboticschallenge.org
 
 Package: drcsim-nightly-dbg
