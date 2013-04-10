@@ -1,3 +1,9 @@
+drcsim (2.3.1-1~precise) precise; urgency=high
+ 
+  * Release 2.3.1-1
+ 
+ -- Brian Gerkey <gerkey@osrfoundation.org>  Sat, 9 Apr 2013 19:29:37 -0700
+
 drcsim (2.3.0-3~precise) precise; urgency=high
  
   * Release 2.3.0-3
