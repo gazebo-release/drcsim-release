@@ -12,7 +12,7 @@ Section: devel
 Priority: extra
 Depends: gazebo (>= 1.7.0), ros-groovy-pr2-mechanism, ros-groovy-std-msgs, ros-groovy-common-msgs, ros-groovy-image-common, ros-groovy-geometry, ros-groovy-pr2-controllers, ros-groovy-geometry-experimental, ros-groovy-robot-model-visualization, ros-groovy-image-pipeline, ros-fuerte-image-transport-plugins, osrf-common, sandia-hand (>= 5.1.12), ${misc:Depends}
 Conflicts: drcsim, drcsim-nightly
-Description: Darpa Robotics Challengue (DRC) simulator
+Description: Darpa Robotics Challenge (DRC) simulator
  Building upon Gazebo simulator, the DRC Simulator, or DRCSim, comprises additional worlds, models, and code that is specifically required to simulate the DRC domain.
 Homepage: http://theroboticschallenge.org
 
