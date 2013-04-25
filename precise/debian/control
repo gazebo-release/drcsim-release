@@ -12,7 +12,7 @@ Section: devel
 Priority: extra
 Depends: gazebo (>= 1.7.0), gazebo (<< 1.8.0), ros-fuerte-pr2-mechanism, ros-fuerte-std-msgs, ros-fuerte-common-msgs, ros-fuerte-image-common, ros-fuerte-geometry, ros-fuerte-pr2-controllers, ros-fuerte-geometry-experimental, ros-fuerte-robot-model-visualization, ros-fuerte-image-pipeline, ros-fuerte-image-transport-plugins, osrf-common, sandia-hand (>= 5.1.12), ${misc:Depends}
 Conflicts: drcsim-prerelease, drcsim-nightly
-Description: Darpa Robotics Challengue (DRC) simulator
+Description: Darpa Robotics Challenge (DRC) simulator
  Building upon Gazebo simulator, the DRC Simulator, or DRCSim, comprises additional worlds, models, and code that is specifically required to simulate the DRC domain.
 Homepage: http://theroboticschallenge.org
 
