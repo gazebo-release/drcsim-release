@@ -1,6 +1,6 @@
-drcsim-prerelease (2.6.0-1~quantal) quantal; urgency=high
+drcsim-prerelease (2.5.2-2~quantal) quantal; urgency=high
  
-  * pre-release 2.6.0-1
+  * pre-release 2.5.2-2
  
  -- Nate Koenig <nate@osrfoundation.org>  Tue, 23 Apr 2013 18:37:47 -0700
 
