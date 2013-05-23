@@ -1,3 +1,9 @@
+drcsim (2.6.2-1~quantal) quantal; urgency=high
+ 
+  * Release 2.6.2-1
+ 
+ -- Nate Koenig <nate@osrfoundation.org>  Thu, 23 May 2013 09:32:00 -0700
+
 drcsim (2.6.1-1~quantal) quantal; urgency=high
  
   * Release 2.6.1-1
