@@ -3,15 +3,43 @@ Standards-Version: 3.9.3
 Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
 Section: devel
 Priority: extra
-Build-Depends: cmake, debhelper (>= 7.0.50~), gazebo-prerelease (>= 1.8.0), ros-fuerte-pr2-mechanism, ros-fuerte-std-msgs, ros-fuerte-common-msgs, ros-fuerte-image-common, ros-fuerte-geometry, ros-fuerte-pr2-controllers, ros-fuerte-geometry-experimental, ros-fuerte-robot-model-visualization, ros-fuerte-image-pipeline, ros-fuerte-image-transport-plugins, osrf-common, sandia-hand (>= 5.1.12)
+Build-Depends: cmake,
+ debhelper (>= 7.0.50~),
+ gazebo (>= 1.8.6), gazebo (<< 1.9.0),
+ ros-fuerte-pr2-mechanism,
+ ros-fuerte-std-msgs,
+ ros-fuerte-common-msgs,
+ ros-fuerte-image-common,
+ ros-fuerte-geometry,
+ ros-fuerte-pr2-controllers,
+ ros-fuerte-geometry-experimental,
+ ros-fuerte-robot-model-visualization,
+ ros-fuerte-image-pipeline,
+ ros-fuerte-image-transport-plugins,
+ osrf-common,
+ sandia-hand (>= 5.1.16), sandia-hand (<< 5.2.0)
 Homepage: http://theroboticschallenge.org
 
 Package: drcsim-prerelease
 Architecture: any
 Section: devel
 Priority: extra
-Depends: gazebo-prerelease (>= 1.8.0), ros-fuerte-pr2-mechanism, ros-fuerte-std-msgs, ros-fuerte-common-msgs, ros-fuerte-image-common, ros-fuerte-geometry, ros-fuerte-pr2-controllers, ros-fuerte-geometry-experimental, ros-fuerte-robot-model-visualization, ros-fuerte-image-pipeline, ros-fuerte-image-transport-plugins, osrf-common, sandia-hand (>= 5.1.12), ${misc:Depends}
-Conflicts: drcsim, drcsim-nightly
+Depends: gazebo (>= 1.8.6), gazebo (<< 1.9.0),
+ ros-fuerte-pr2-mechanism,
+ ros-fuerte-std-msgs,
+ ros-fuerte-common-msgs,
+ ros-fuerte-image-common,
+ ros-fuerte-geometry,
+ ros-fuerte-pr2-controllers,
+ ros-fuerte-geometry-experimental,
+ ros-fuerte-robot-model-visualization,
+ ros-fuerte-image-pipeline,
+ ros-fuerte-image-transport-plugins,
+ osrf-common,
+ sandia-hand (>= 5.1.16), sandia-hand (<< 5.2.0),
+ ${misc:Depends}
+Conflicts: drcsim,
+ drcsim-nightly
 Description: Darpa Robotics Challenge (DRC) simulator
  Building upon Gazebo simulator, the DRC Simulator, or DRCSim, comprises additional worlds, models, and code that is specifically required to simulate the DRC domain.
 Homepage: http://theroboticschallenge.org
@@ -20,8 +48,8 @@ Package: drcsim-prerelease-dbg
 Architecture: any
 Section: debug
 Priority: extra
-Depends:
-    drcsim-prerelease (= ${binary:Version}), ${misc:Depends}
+Depends: drcsim-prerelease (= ${binary:Version}), 
+  ${misc:Depends}
 Conflicts: drcsim-dbg, drcsim-nightly-dbg
 Description: debugging symbols for drcsim
  This package contains the debugging symbols for DRC simulator
