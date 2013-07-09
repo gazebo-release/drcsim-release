@@ -6,6 +6,8 @@ Priority: extra
 Build-Depends: cmake,
  debhelper (>= 7.0.50~),
  gazebo (>= 1.8.4), gazebo (<< 1.9.0),
+ ros-fuerte-urdfdom,
+ ros-fuerte-console-bridge,
  ros-fuerte-pr2-mechanism,
  ros-fuerte-std-msgs,
  ros-fuerte-common-msgs,
@@ -25,6 +27,8 @@ Architecture: any
 Section: devel
 Priority: extra
 Depends: gazebo (>= 1.8.4), gazebo (<< 1.9.0),
+ ros-fuerte-urdfdom,
+ ros-fuerte-console-bridge,
  ros-fuerte-pr2-mechanism,
  ros-fuerte-std-msgs,
  ros-fuerte-common-msgs,
