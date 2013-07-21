@@ -6,6 +6,8 @@ Priority: extra
 Build-Depends: cmake,
  debhelper (>= 7.0.50~),
  gazebo-nightly,
+ ros-groovy-urdfdom,
+ ros-groovy-console-bridge,
  ros-groovy-pr2-mechanism,
  ros-groovy-std-msgs,
  ros-groovy-common-msgs,
@@ -25,6 +27,8 @@ Architecture: any
 Section: devel
 Priority: extra
 Depends: gazebo-nightly,
+ ros-groovy-urdfdom,
+ ros-groovy-console-bridge,
  ros-groovy-pr2-mechanism,
  ros-groovy-std-msgs,
  ros-groovy-common-msgs,
