@@ -1,3 +1,9 @@
+drcsim (2.7.0-1~quantal) quantal; urgency=high
+ 
+  * Release 2.7.0-1
+ 
+ -- Steve Peters <scpeters@osrfoundation.org>  Wed, 24 Jul 2013 13:55:00 -0700
+
 drcsim (2.6.6-1~quantal) quantal; urgency=high
  
   * Release 2.6.6-1
