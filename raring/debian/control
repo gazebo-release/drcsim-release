@@ -16,8 +16,8 @@ Build-depends: cmake,
  ros-hydro-robot-model-visualization,
  ros-hydro-image-pipeline,
  ros-hydro-image-transport-plugins,
- osrf-common,
- sandia-hand (>= 5.1.16), sandia-hand (<< 5.2.0),
+ osrf-common-prerelease,
+ sandia-hand-prerelease (>= 5.1.16), sandia-hand-prerelease (<< 5.2.0),
 Homepage: http://theroboticschallenge.org
 
 Package: drcsim-prerelease
@@ -35,8 +35,8 @@ Depends: gazebo (>= 1.8.6), gazebo (<< 1.9.0),
  ros-hydro-robot-model-visualization,
  ros-hydro-image-pipeline,
  ros-hydro-image-transport-plugins,
- osrf-common,
- sandia-hand (>= 5.1.16), sandia-hand (<< 5.2.0),
+ osrf-common-prerelease,
+ sandia-hand-prerelease (>= 5.1.16), sandia-hand-prerelease (<< 5.2.0),
  ${misc:Depends}
 Conflicts: drcsim, 
   drcsim-nightly
