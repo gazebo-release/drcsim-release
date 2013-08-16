@@ -1,4 +1,4 @@
-ource: drcsim
+Source: drcsim
 Standards-Version: 3.9.3
 Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
 Section: devel
@@ -19,7 +19,7 @@ Build-Depends: cmake,
  ros-hydro-image-pipeline,
  ros-hydro-image-transport-plugins,
  osrf-common,
- sandia-hand (>= 5.1.14), sandia-hand (<< 5.2.0),
+ sandia-hand (>= 5.1.14), sandia-hand (<< 5.2.0)
 Homepage: http://theroboticschallenge.org
 
 Package: drcsim
