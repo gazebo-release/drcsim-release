@@ -19,6 +19,7 @@ Build-Depends: cmake,
  ros-hydro-image-pipeline,
  ros-hydro-image-transport-plugins,
  ros-hydro-convex_decomposition,
+ ros-hydro-ivcon,
  osrf-common,
  sandia-hand (>= 5.1.14), sandia-hand (<< 5.2.0)
 Homepage: http://theroboticschallenge.org
@@ -41,6 +42,7 @@ Depends: gazebo (>= 1.9.0),
  ros-hydro-image-pipeline,
  ros-hydro-image-transport-plugins,
  ros-hydro-convex_decomposition,
+ ros-hydro-ivcon,
  osrf-common,
  sandia-hand (>= 5.1.14), sandia-hand (<< 5.2.0),
  ${misc:Depends}
