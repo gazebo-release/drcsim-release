@@ -18,7 +18,7 @@ Build-Depends: cmake,
  ros-hydro-joint-state-publisher,
  ros-hydro-image-pipeline,
  ros-hydro-image-transport-plugins,
- ros-hydro-convex_decomposition,
+ ros-hydro-convex-decomposition,
  ros-hydro-ivcon,
  osrf-common,
  sandia-hand (>= 5.1.14), sandia-hand (<< 5.2.0)
