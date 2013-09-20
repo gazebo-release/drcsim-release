@@ -1,3 +1,9 @@
+drcsim (3.1.0-1~raring) raring; urgency=high
+ 
+  * Release 3.1.0-1
+ 
+ -- Nate Koenig <nate@osrfoundation.org>  Fri, 20 Sep 2013 08:48:00 -0700
+
 drcsim (3.0.0-1~raring) raring; urgency=high
  
   * Release 3.0.0-1
