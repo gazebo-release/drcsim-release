@@ -22,7 +22,7 @@ Build-Depends: cmake,
  ros-groovy-gazebo-plugins,
  ros-groovy-gazebo-msgs,
  osrf-common,
- sandia-hand (>= 5.1.14), sandia-hand (<< 5.2.0),
+ sandia-hand (>= 5.2.0)
 Homepage: http://theroboticschallenge.org
 
 Package: drcsim
@@ -46,7 +46,7 @@ Depends: gazebo (>= 1.9.0),
  ros-groovy-gazebo-plugins,
  ros-groovy-gazebo-msgs,
  osrf-common,
- sandia-hand (>= 5.1.14), sandia-hand (<< 5.2.0),
+ sandia-hand (>= 5.2.0)
  ${misc:Depends}
 Conflicts: drcsim-prerelease,
  drcsim-nightly
