@@ -6,7 +6,7 @@ Priority: extra
 Build-Depends: cmake,
  debhelper (>= 7.0.50~),
  gazebo-nightly,
- ros-fuºerte-pr2-mechanism,
+ ros-fuerte-pr2-mechanism,
  ros-fuerte-std-msgs,
  ros-fuerte-common-msgs,
  ros-fuerte-image-common,
