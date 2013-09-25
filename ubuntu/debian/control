@@ -1,0 +1,54 @@
+Source: drcsim-nightly
+Standards-Version: 3.9.3
+Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
+Section: devel
+Priority: extra
+Build-Depends: cmake,
+ debhelper (>= 7.0.50~),
+ gazebo-nightly,
+ ros-groovy-pr2-mechanism,
+ ros-groovy-std-msgs,
+ ros-groovy-common-msgs,
+ ros-groovy-image-common,
+ ros-groovy-geometry,
+ ros-groovy-pr2-controllers,
+ ros-groovy-geometry-experimental,
+ ros-groovy-robot-model-visualization,
+ ros-groovy-image-pipeline,
+ ros-groovy-image-transport-plugins,
+ osrf-common-nightly,
+ sandia-hand-nightly
+Homepage: http://theroboticschallenge.org
+
+Package: drcsim-nightly
+Architecture: any
+Section: devel
+Priority: extra
+Depends: gazebo-nightly,
+ ros-groovy-pr2-mechanism,
+ ros-groovy-std-msgs,
+ ros-groovy-common-msgs,
+ ros-groovy-image-common,
+ ros-groovy-geometry,
+ ros-groovy-pr2-controllers,
+ ros-groovy-geometry-experimental,
+ ros-groovy-robot-model-visualization,
+ ros-groovy-image-pipeline,
+ ros-groovy-image-transport-plugins,
+ osrf-common-nightly,
+ sandia-hand-nightly,
+ ${misc:Depends}
+Conflicts: drcsim, drcsim-prerelease
+Description: Darpa Robotics Challenge (DRC) simulator
+ Building upon Gazebo simulator, the DRC Simulator, or DRCSim, comprises additional worlds, models, and code that is specifically required to simulate the DRC domain.
+Homepage: http://theroboticschallenge.org
+
+Package: drcsim-nightly-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends:
+    drcsim-nightly (= ${binary:Version}), ${misc:Depends}
+Conflicts: drcsim-dbg, drcsim-prerelease-dbg
+Description: debugging symbols for drcsim
+ This package contains the debugging symbols for DRC simulator
