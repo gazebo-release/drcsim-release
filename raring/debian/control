@@ -32,10 +32,7 @@ Build-Depends: cmake,
  ros-hydro-rosbuild,
  ros-hydro-tf,
  ros-hydro-trajectory-msgs,
- ros-hydro-xacro,
- ros-hydro-gazebo-ros,
  ros-hydro-gazebo-plugins,
- ros-hydro-gazebo-msgs,
  osrf-common,
  sandia-hand (>= 5.2.0)
 Homepage: http://theroboticschallenge.org
