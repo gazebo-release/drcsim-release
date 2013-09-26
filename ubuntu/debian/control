@@ -16,6 +16,7 @@ Build-Depends: cmake,
  ros-groovy-robot-model-visualization,
  ros-groovy-image-pipeline,
  ros-groovy-image-transport-plugins,
+ ros-groovy-gazebo-plugins,
  osrf-common-nightly,
  sandia-hand-nightly
 Homepage: http://theroboticschallenge.org
@@ -35,6 +36,9 @@ Depends: gazebo-nightly,
  ros-groovy-robot-model-visualization,
  ros-groovy-image-pipeline,
  ros-groovy-image-transport-plugins,
+ ros-groovy-gazebo-ros,
+ ros-groovy-gazebo-plugins,
+ ros-groovy-gazebo-msgs,
  osrf-common-nightly,
  sandia-hand-nightly,
  ${misc:Depends}
