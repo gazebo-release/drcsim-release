@@ -5,7 +5,7 @@ Section: devel
 Priority: extra
 Build-depends: cmake,
  debhelper (>= 7.0.50~),
- gazebo (<< 1.10.0),
+ gazebo-prerelease (>= 2.0.0),
  ros-groovy-pr2-mechanism,
  ros-groovy-std-msgs,
  ros-groovy-common-msgs,
@@ -16,7 +16,7 @@ Build-depends: cmake,
  ros-groovy-robot-model-visualization,
  ros-groovy-image-pipeline,
  ros-groovy-image-transport-plugins,
- ros-groovy-gazebo-plugins,
+ ros-groovy-gazebo-plugins-prerelease,
  osrf-common-prerelease,
  sandia-hand-prerelease,
 Homepage: http://theroboticschallenge.org
@@ -25,7 +25,7 @@ Package: drcsim-prerelease
 Architecture: any
 Section: devel
 Priority: extra
-Depends:  gazebo (<< 1.10.0),
+Depends:  gazebo-prerelease (>= 2.0.0),
  ros-groovy-pr2-mechanism,
  ros-groovy-std-msgs,
  ros-groovy-common-msgs,
@@ -36,8 +36,8 @@ Depends:  gazebo (<< 1.10.0),
  ros-groovy-robot-model-visualization,
  ros-groovy-image-pipeline,
  ros-groovy-image-transport-plugins,
- ros-groovy-gazebo-ros,
- ros-groovy-gazebo-plugins,
+ ros-groovy-gazebo-ros-prerelease,
+ ros-groovy-gazebo-plugins-prerelease,
  ros-groovy-gazebo-msgs,
  osrf-common-prerelease,
  sandia-hand-prerelease,

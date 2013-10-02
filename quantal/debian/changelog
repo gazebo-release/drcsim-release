@@ -1,8 +1,8 @@
-drcsim-prerelease (3.1.0-1~quantal) quantal; urgency=high
+drcsim-prerelease (3.1.0-2~quantal) quantal; urgency=high
  
-  * pre-release 3.1.0-1
+  * pre-release 3.1.0-2
  
- -- Jose Luis <jrivero@osrfoundation.org>  Mon, 30 Sep 2013 13:31:46 -0700
+ -- Jose Luis <jrivero@osrfoundation.org>  Wed, 3 Sep 2013 13:31:46 -0700
 
 drcsim-prerelease (2.6.7-1~quantal) quantal; urgency=high
  
