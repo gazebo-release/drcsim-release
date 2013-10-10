@@ -5,9 +5,7 @@ Section: devel
 Priority: extra
 Build-Depends: cmake,
  debhelper (>= 7.0.50~),
- gazebo (>= 1.9.0),
- ros-groovy-urdfdom,
- ros-groovy-console-bridge,
+ gazebo (>= 2.0.0),
  ros-groovy-pr2-mechanism,
  ros-groovy-std-msgs,
  ros-groovy-common-msgs,
@@ -18,8 +16,8 @@ Build-Depends: cmake,
  ros-groovy-robot-model-visualization,
  ros-groovy-image-pipeline,
  ros-groovy-image-transport-plugins,
- ros-groovy-gazebo-plugins,
- osrf-common,
+ ros-groovy-gazebo-plugins (>= 2.3.3),
+ osrf-common (>= 1.1.0),
  sandia-hand (>= 5.2.0)
 Homepage: http://theroboticschallenge.org
 
@@ -27,7 +25,7 @@ Package: drcsim
 Architecture: any
 Section: devel
 Priority: extra
-Depends: gazebo (>= 1.9.0),
+Depends: gazebo (>= 2.0.0),
  ros-groovy-urdfdom,
  ros-groovy-console-bridge,
  ros-groovy-pr2-mechanism,
@@ -41,11 +39,11 @@ Depends: gazebo (>= 1.9.0),
  ros-groovy-image-pipeline,
  ros-groovy-image-transport-plugins,
  ros-groovy-xacro,
- ros-groovy-gazebo-ros,
- ros-groovy-gazebo-plugins,
- ros-groovy-gazebo-msgs,
- osrf-common,
- sandia-hand (>= 5.2.0)
+ ros-groovy-gazebo-ros (>= 2.3.3),
+ ros-groovy-gazebo-plugins (>= 2.3.3),
+ ros-groovy-gazebo-msgs (>= 2.3.3),
+ osrf-common (>= 1.1.0),
+ sandia-hand (>= 5.2.0),
  ${misc:Depends}
 Conflicts: drcsim-prerelease,
  drcsim-nightly
