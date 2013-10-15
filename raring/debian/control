@@ -5,7 +5,7 @@ Section: devel
 Priority: extra
 Build-Depends: cmake,
  debhelper (>= 7.0.50~),
- gazebo_current,
+ gazebo-current,
  ros-hydro-pr2-mechanism,
  ros-hydro-std-msgs,
  ros-hydro-common-msgs,
@@ -39,7 +39,7 @@ Package: drcsim
 Architecture: any
 Section: devel
 Priority: extra
-Depends: gazebo_current,
+Depends: gazebo-current,
  ros-hydro-pr2-mechanism,
  ros-hydro-std-msgs,
  ros-hydro-common-msgs,
