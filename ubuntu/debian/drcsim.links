@@ -1,0 +1,3 @@
+/opt/ros/groovy/share/multisense_sl_description /opt/ros/groovy/share/drcsim_model_resources/gazebo_models/environments/multisense_sl_description 
+/opt/ros/groovy/share/atlas_description /opt/ros/groovy/share/drcsim_model_resources/gazebo_models/environments/atlas_description
+/opt/ros/groovy/share/irobot_hand_description /opt/ros/groovy/share/drcsim_model_resources/gazebo_models/environments/irobot_hand_description 
