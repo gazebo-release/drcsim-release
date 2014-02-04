@@ -45,7 +45,7 @@ Depends:  gazebo-current (>= 2.0.0),
  ros-groovy-image-transport-plugins,
  ros-groovy-gazebo-ros-current,
  ros-groovy-gazebo-plugins-current,
- ros-groovy-gazebo-msgs,
+ ros-groovy-gazebo-msgs-current,
  osrf-common-groovy-prerelease,
  sandia-hand-groovy-prerelease,
  ${misc:Depends}
