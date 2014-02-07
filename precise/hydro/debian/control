@@ -1,0 +1,93 @@
+Source: drcsim-prerelease
+Standards-Version: 3.9.3
+Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
+Section: devel
+Priority: extra
+Build-Depends: cmake,
+ debhelper (>= 7.0.50~),
+ gazebo-current (>= 2.0.0),
+ ros-hydro-urdfdom,
+ ros-hydro-console-bridge,
+ ros-hydro-pr2-mechanism,
+ ros-hydro-std-msgs,
+ ros-hydro-common-msgs,
+ ros-hydro-image-common,
+ ros-hydro-geometry,
+ ros-hydro-pr2-controllers,
+ ros-hydro-geometry-experimental,
+ ros-hydro-joint-state-publisher,
+ ros-hydro-image-pipeline,
+ ros-hydro-image-transport-plugins,
+ ros-hydro-convex-decomposition,
+ ros-hydro-ivcon,
+ ros-hydro-actionlib,
+ ros-hydro-cmake-modules,
+ ros-hydro-control-msgs,
+ ros-hydro-image-transport,
+ ros-hydro-nav-msgs,
+ ros-hydro-nodelet-topic-tools,
+ ros-hydro-pr2-controller-manager,
+ ros-hydro-robot-state-publisher,
+ ros-hydro-ros,
+ ros-hydro-rosbuild,
+ ros-hydro-tf,
+ ros-hydro-trajectory-msgs,
+ ros-hydro-gazebo-plugins-current,
+ osrf-common-hydro-prerelease,
+ sandia-hand-hydro-prerelease
+Homepage: http://theroboticschallenge.org
+
+Package: drcsim-hydro-prerelease
+Architecture: any
+Section: devel
+Priority: extra
+Depends:  gazebo-current (>= 2.0.0),
+ ros-hydro-urdfdom,
+ ros-hydro-console-bridge,
+ ros-hydro-pr2-mechanism,
+ ros-hydro-std-msgs,
+ ros-hydro-common-msgs,
+ ros-hydro-image-common,
+ ros-hydro-geometry,
+ ros-hydro-pr2-controllers,
+ ros-hydro-geometry-experimental,
+ ros-hydro-joint-state-publisher,
+ ros-hydro-image-pipeline,
+ ros-hydro-image-transport-plugins,
+ ros-hydro-convex-decomposition,
+ ros-hydro-ivcon,
+ ros-hydro-actionlib,
+ ros-hydro-cmake-modules,
+ ros-hydro-control-msgs,
+ ros-hydro-image-transport,
+ ros-hydro-nav-msgs,
+ ros-hydro-nodelet-topic-tools,
+ ros-hydro-pr2-controller-manager,
+ ros-hydro-robot-state-publisher,
+ ros-hydro-ros,
+ ros-hydro-rosbuild,
+ ros-hydro-tf,
+ ros-hydro-trajectory-msgs,
+ ros-hydro-xacro,
+ ros-hydro-gazebo-ros-current,
+ ros-hydro-gazebo-plugins-current,
+ ros-hydro-gazebo-msgs-current,
+ osrf-common-hydro-prerelease,
+ sandia-hand-hydro-prerelease
+ ${misc:Depends}
+Conflicts: drcsim, 
+  drcsim-nightly
+Description: Darpa Robotics Challenge (DRC) simulator
+ Building upon Gazebo simulator, the DRC Simulator, or DRCSim, comprises additional worlds, models, and code that is specifically required to simulate the DRC domain.
+Homepage: http://theroboticschallenge.org
+
+Package: drcsim-hydro-prerelease-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends:
+    drcsim-hydro-prerelease (= ${binary:Version}), ${misc:Depends}
+Conflicts: drcsim-dbg, 
+  drcsim-nightly-dbg
+Description: debugging symbols for drcsim
+ This package contains the debugging symbols for DRC simulator

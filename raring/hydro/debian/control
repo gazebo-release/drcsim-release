@@ -1,11 +1,13 @@
-Source: drcsim
+Source: drcsim-prerelease
 Standards-Version: 3.9.3
 Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
 Section: devel
 Priority: extra
 Build-Depends: cmake,
  debhelper (>= 7.0.50~),
- gazebo-current,
+ gazebo-prerelease (>= 2.0.0),
+ ros-hydro-urdfdom,
+ ros-hydro-console-bridge,
  ros-hydro-pr2-mechanism,
  ros-hydro-std-msgs,
  ros-hydro-common-msgs,
@@ -30,16 +32,18 @@ Build-Depends: cmake,
  ros-hydro-rosbuild,
  ros-hydro-tf,
  ros-hydro-trajectory-msgs,
- ros-hydro-gazebo-plugins-current (>= 2.4.0),
- osrf-common (>= 1.1.0),
- sandia-hand (>= 5.2.0)
+ ros-hydro-gazebo-plugins-prerelease,
+ osrf-common-prerelease,
+ sandia-hand-prerelease
 Homepage: http://theroboticschallenge.org
 
-Package: drcsim
+Package: drcsim-prerelease
 Architecture: any
 Section: devel
 Priority: extra
-Depends: gazebo-current,
+Depends:  gazebo-prerelease (>= 2.0.0),
+ ros-hydro-urdfdom,
+ ros-hydro-console-bridge,
  ros-hydro-pr2-mechanism,
  ros-hydro-std-msgs,
  ros-hydro-common-msgs,
@@ -65,25 +69,25 @@ Depends: gazebo-current,
  ros-hydro-tf,
  ros-hydro-trajectory-msgs,
  ros-hydro-xacro,
- ros-hydro-gazebo-ros-current (>= 2.4.0),
- ros-hydro-gazebo-plugins-current (>= 2.4.0),
- ros-hydro-gazebo-msgs-current (>= 2.4.0),
- osrf-common (>= 1.1.0),
- sandia-hand (>= 5.2.0),
+ ros-hydro-gazebo-ros-prerelease,
+ ros-hydro-gazebo-plugins-prerelease,
+ ros-hydro-gazebo-msgs,
+ osrf-common-prerelease,
+ sandia-hand-prerelease,
  ${misc:Depends}
-Conflicts: drcsim-prerelease,
- drcsim-nightly
+Conflicts: drcsim, 
+  drcsim-nightly
 Description: Darpa Robotics Challenge (DRC) simulator
  Building upon Gazebo simulator, the DRC Simulator, or DRCSim, comprises additional worlds, models, and code that is specifically required to simulate the DRC domain.
 Homepage: http://theroboticschallenge.org
 
-Package: drcsim-dbg
+Package: drcsim-prerelease-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-    drcsim (= ${binary:Version}), ${misc:Depends}
-Conflicts: drcsim-prerelease-dbg,
- drcsim-nightly-dbg
+    drcsim-prerelease (= ${binary:Version}), ${misc:Depends}
+Conflicts: drcsim-dbg, 
+  drcsim-nightly-dbg
 Description: debugging symbols for drcsim
  This package contains the debugging symbols for DRC simulator
