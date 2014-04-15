@@ -5,7 +5,7 @@ Section: devel
 Priority: extra
 Build-Depends: cmake,
  debhelper (>= 7.0.50~),
- gazebo-current (>= 2.0.0),
+ gazebo3,
  ros-hydro-urdfdom,
  ros-hydro-console-bridge,
  ros-hydro-pr2-mechanism,
@@ -32,9 +32,9 @@ Build-Depends: cmake,
  ros-hydro-rosbuild,
  ros-hydro-tf,
  ros-hydro-trajectory-msgs,
- ros-hydro-gazebo-plugins-current,
- osrf-common-hydro-prerelease,
- sandia-hand-hydro-prerelease
+ ros-hydro-gazebo3-plugins,
+ osrf-common-hydro,
+ sandia-hand-hydro
 Homepage: http://theroboticschallenge.org
 
 Package: drcsim-hydro-prerelease
@@ -72,8 +72,8 @@ Depends:  gazebo-current (>= 2.0.0),
  ros-hydro-gazebo-ros-current,
  ros-hydro-gazebo-plugins-current,
  ros-hydro-gazebo-msgs-current,
- osrf-common-hydro-prerelease,
- sandia-hand-hydro-prerelease
+ osrf-common-hydro,
+ sandia-hand-hydro,
  ${misc:Depends}
 Conflicts: drcsim, 
   drcsim-nightly
