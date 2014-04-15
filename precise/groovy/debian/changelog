@@ -1,3 +1,9 @@
+drcsim-prerelease (3.2.0-1~precise) precise; urgency=low
+
+  * drcsim-prerelease 3.2.0-1 release
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Tue, 15 Apr 2014 18:29:30 +0200
+
 drcsim-prerelease (3.1.1-4~precise) precise; urgency=high
  
   * pre-release 3.1.1-4
