@@ -1,4 +1,4 @@
-Source: drcsim-prerelease
+Source: drcsim
 Standards-Version: 3.9.3
 Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
 Section: devel
@@ -37,7 +37,7 @@ Build-Depends: cmake,
  sandia-hand
 Homepage: http://theroboticschallenge.org
 
-Package: drcsim-prerelease
+Package: drcsim
 Architecture: any
 Section: devel
 Priority: extra
@@ -75,19 +75,17 @@ Depends:  gazebo3,
  osrf-common,
  sandia-hand,
  ${misc:Depends}
-Conflicts: drcsim, 
+Conflicts: drcsim-prerelease, 
   drcsim-nightly
 Description: Darpa Robotics Challenge (DRC) simulator
  Building upon gazebo3 simulator, the DRC Simulator, or DRCSim, comprises additional worlds, models, and code that is specifically required to simulate the DRC domain.
 Homepage: http://theroboticschallenge.org
 
-Package: drcsim-prerelease-dbg
+Package: drcsim-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-    drcsim-prerelease (= ${binary:Version}), ${misc:Depends}
-Conflicts: drcsim-dbg, 
-  drcsim-nightly-dbg
+    drcsim (= ${binary:Version}), ${misc:Depends}
 Description: debugging symbols for drcsim
- This package contains the debugging symbols for DRC simulator
+ his package contains the debugging symbols for DRC simulator
