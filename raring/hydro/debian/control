@@ -5,7 +5,7 @@ Section: devel
 Priority: extra
 Build-Depends: cmake,
  debhelper (>= 7.0.50~),
- gazebo-prerelease (>= 2.0.0),
+ gazebo3,
  ros-hydro-urdfdom,
  ros-hydro-console-bridge,
  ros-hydro-pr2-mechanism,
@@ -32,16 +32,16 @@ Build-Depends: cmake,
  ros-hydro-rosbuild,
  ros-hydro-tf,
  ros-hydro-trajectory-msgs,
- ros-hydro-gazebo-plugins-prerelease,
- osrf-common-prerelease,
- sandia-hand-prerelease
+ ros-hydro-gazebo3-plugins,
+ osrf-common,
+ sandia-hand
 Homepage: http://theroboticschallenge.org
 
 Package: drcsim-prerelease
 Architecture: any
 Section: devel
 Priority: extra
-Depends:  gazebo-prerelease (>= 2.0.0),
+Depends:  gazebo3,
  ros-hydro-urdfdom,
  ros-hydro-console-bridge,
  ros-hydro-pr2-mechanism,
@@ -69,16 +69,16 @@ Depends:  gazebo-prerelease (>= 2.0.0),
  ros-hydro-tf,
  ros-hydro-trajectory-msgs,
  ros-hydro-xacro,
- ros-hydro-gazebo-ros-prerelease,
- ros-hydro-gazebo-plugins-prerelease,
- ros-hydro-gazebo-msgs,
- osrf-common-prerelease,
- sandia-hand-prerelease,
+ ros-hydro-gazebo3-ros,
+ ros-hydro-gazebo3-plugins,
+ ros-hydro-gazebo3-msgs,
+ osrf-common,
+ sandia-hand,
  ${misc:Depends}
 Conflicts: drcsim, 
   drcsim-nightly
 Description: Darpa Robotics Challenge (DRC) simulator
- Building upon Gazebo simulator, the DRC Simulator, or DRCSim, comprises additional worlds, models, and code that is specifically required to simulate the DRC domain.
+ Building upon gazebo3 simulator, the DRC Simulator, or DRCSim, comprises additional worlds, models, and code that is specifically required to simulate the DRC domain.
 Homepage: http://theroboticschallenge.org
 
 Package: drcsim-prerelease-dbg
