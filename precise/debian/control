@@ -5,7 +5,7 @@ Section: devel
 Priority: extra
 Build-Depends: cmake,
  debhelper (>= 7.0.50~),
- libgazebo4-dev,
+ libgazebo4-dev-prerelease,
  ros-hydro-urdfdom,
  ros-hydro-console-bridge,
  ros-hydro-pr2-mechanism,
@@ -48,7 +48,7 @@ Package: drcsim-prerelease
 Architecture: any
 Section: devel
 Priority: extra
-Depends: libgazebo4-dev, 
+Depends: libgazebo4-dev-prerelease,
  ros-hydro-urdfdom,
  ros-hydro-console-bridge,
  ros-hydro-pr2-mechanism,
