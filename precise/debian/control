@@ -90,7 +90,7 @@ Description: Darpa Robotics Challenge (DRC) simulator
  Building upon Gazebo simulator, the DRC Simulator, or DRCSim, comprises additional worlds, models, and code that is specifically required to simulate the DRC domain.
 Homepage: http://theroboticschallenge.org
 
-Package: drcsim-hydro-prerelease-dbg
+Package: drcsim-prerelease-dbg
 Architecture: any
 Section: debug
 Priority: extra
