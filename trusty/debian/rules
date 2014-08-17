@@ -45,4 +45,4 @@ override_dh_auto_test:
 	true
 
 override_dh_strip:
-	dh_strip --dbg-package=drcsim-indigo-prerelease-dbg
+	dh_strip --dbg-package=drcsim-prerelease-dbg
