@@ -37,8 +37,6 @@ Architecture: any
 Section: devel
 Priority: extra
 Depends: libgazebo4-dev-prerelease,
- ros-indigo-urdfdom,
- ros-indigo-console-bridge,
  ros-indigo-pr2-mechanism-msgs,
  ros-indigo-std-msgs,
  ros-indigo-common-msgs,
