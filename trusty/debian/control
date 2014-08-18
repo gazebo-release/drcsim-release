@@ -5,7 +5,7 @@ Section: devel
 Priority: extra
 Build-Depends: cmake,
  debhelper (>= 7.0.50~),
- libgazebo4-dev-prerelease,
+ libgazebo4-dev,
  ros-indigo-pr2-mechanism-msgs,
  ros-indigo-std-msgs,
  ros-indigo-common-msgs,
@@ -27,7 +27,7 @@ Build-Depends: cmake,
  ros-indigo-rosbuild,
  ros-indigo-tf,
  ros-indigo-trajectory-msgs,
- ros-indigo-gazebo4-prerelease-plugins,
+ ros-indigo-gazebo4-plugins,
  osrf-common-prerelease (>=1.1.0-4),
  sandia-hand-prerelease (>=5.3.0)
 Homepage: http://theroboticschallenge.org
@@ -36,7 +36,7 @@ Package: drcsim-prerelease
 Architecture: any
 Section: devel
 Priority: extra
-Depends: libgazebo4-dev-prerelease,
+Depends: libgazebo4-dev,
  ros-indigo-pr2-mechanism-msgs,
  ros-indigo-std-msgs,
  ros-indigo-common-msgs,
@@ -58,9 +58,9 @@ Depends: libgazebo4-dev-prerelease,
  ros-indigo-tf,
  ros-indigo-trajectory-msgs,
  ros-indigo-xacro,
- ros-indigo-gazebo4-prerelease-ros,
- ros-indigo-gazebo4-prerelease-plugins,
- ros-indigo-gazebo4-prerelease-msgs,
+ ros-indigo-gazebo4-ros,
+ ros-indigo-gazebo4-plugins,
+ ros-indigo-gazebo4-msgs,
  osrf-common-prerelease (>=1.1.0-4),
  sandia-hand-prerelease (>=5.3.0),
  ${misc:Depends}

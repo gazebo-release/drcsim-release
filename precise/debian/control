@@ -5,7 +5,7 @@ Section: devel
 Priority: extra
 Build-Depends: cmake,
  debhelper (>= 7.0.50~),
- libgazebo4-dev-prerelease,
+ libgazebo4-dev,
  ros-hydro-urdfdom,
  ros-hydro-console-bridge,
  ros-hydro-pr2-mechanism,
@@ -32,7 +32,7 @@ Build-Depends: cmake,
  ros-hydro-rosbuild,
  ros-hydro-tf,
  ros-hydro-trajectory-msgs,
- ros-hydro-gazebo4-prerelease-plugins,
+ ros-hydro-gazebo4-plugins,
  osrf-common-prerelease (>=1.1.0-4),
  sandia-hand-prerelease (>=5.3.0)
 Homepage: http://theroboticschallenge.org
@@ -48,7 +48,7 @@ Package: drcsim-prerelease
 Architecture: any
 Section: devel
 Priority: extra
-Depends: libgazebo4-dev-prerelease,
+Depends: libgazebo4-dev,
  ros-hydro-urdfdom,
  ros-hydro-console-bridge,
  ros-hydro-pr2-mechanism,
@@ -76,9 +76,9 @@ Depends: libgazebo4-dev-prerelease,
  ros-hydro-tf,
  ros-hydro-trajectory-msgs,
  ros-hydro-xacro,
- ros-hydro-gazebo4-prerelease-ros,
- ros-hydro-gazebo4-prerelease-plugins,
- ros-hydro-gazebo4-prerelease-msgs,
+ ros-hydro-gazebo4-ros,
+ ros-hydro-gazebo4-plugins,
+ ros-hydro-gazebo4-msgs,
  osrf-common-prerelease (>=1.1.0-4),
  sandia-hand-prerelease (>=5.3.0),
  ${misc:Depends}
