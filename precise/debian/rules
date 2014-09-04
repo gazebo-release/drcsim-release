@@ -30,10 +30,16 @@ override_dh_auto_build:
 	dh_auto_build -- VERBOSE=1
 
 override_dh_shlibdeps:
+	# Ignore missing information since:
+	# couldn't find library 
+	# ../../drcsim_model_resources/AtlasSimInterface_1.1.1/lib64/libAtlasSimInterface.so.1.1.1 
+	# needed by debian/drcsim-prerelease/opt/ros/indigo/lib/drcsim_gazebo_ros_plugins/plugins/libAtlasPlugin.so 
 	# Pull in ROS and Gazebo configuration
 	. "/opt/ros/hydro/setup.sh" && \
 	. "/usr/share/gazebo/setup.sh" && \
-	dh_shlibdeps
+	find . -name libAtlasSimInterface.so.1.1.1 && \
+	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):debian/drcsim-prerelease/opt/ros/hydro/lib/AtlasSimInterface_1.1.1/ dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
+
 
 override_dh_auto_install:
 	. "/opt/ros/hydro/setup.sh" && \
