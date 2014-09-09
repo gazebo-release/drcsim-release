@@ -6,7 +6,6 @@ Priority: extra
 Build-Depends: cmake,
  debhelper (>= 7.0.50~),
  libgazebo4-dev,
- ros-indigo-pr2-mechanism-msgs,
  ros-indigo-std-msgs,
  ros-indigo-common-msgs,
  ros-indigo-image-common,
@@ -37,7 +36,6 @@ Architecture: any
 Section: devel
 Priority: extra
 Depends: libgazebo4-dev,
- ros-indigo-pr2-mechanism-msgs,
  ros-indigo-std-msgs,
  ros-indigo-common-msgs,
  ros-indigo-image-common,
