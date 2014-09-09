@@ -30,19 +30,14 @@ override_dh_auto_build:
 	dh_auto_build -- VERBOSE=1
 
 override_dh_shlibdeps:
-	# Ignore missing information since:
-	# couldn't find library 
-	# ../../drcsim_model_resources/AtlasSimInterface_1.1.1/lib64/libAtlasSimInterface.so.1.1.1 
-	# needed by debian/drcsim-prerelease/opt/ros/indigo/lib/drcsim_gazebo_ros_plugins/plugins/libAtlasPlugin.so 
 	# Pull in ROS and Gazebo configuration
-	#. "/opt/ros/indigo/setup.sh" && \
-	#. "/usr/share/gazebo/setup.sh" && \
-	# LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):$(PWD)/debian/drcsim-prerelease/opt/ros/indigo/lib/AtlasSimInterface_1.1.1/:$(PWD)/debian/drcsim-prerelease/opt/ros/indigo/lib/AtlasSimInterface_2.10.2/ dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
-	true
+	. "/opt/ros/indigo/setup.sh" && \
+	. "/usr/share/gazebo/setup.sh" && \
+	dh_shlibdeps
 
 override_dh_auto_install:
 	. "/opt/ros/indigo/setup.sh" && \
-	dh_auto_install --destdir=debian/drcsim-prerelease
+	dh_auto_install --destdir=debian/drcsim
 
 override_dh_auto_test:
 	echo -- Skipping tests
@@ -50,4 +45,4 @@ override_dh_auto_test:
 	true
 
 override_dh_strip:
-	dh_strip --dbg-package=drcsim-prerelease-dbg
+	dh_strip --dbg-package=drcsim-dbg
