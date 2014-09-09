@@ -1,0 +1,80 @@
+Source: drcsim-prerelease
+Standards-Version: 3.9.3
+Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
+Section: devel
+Priority: extra
+Build-Depends: cmake,
+ debhelper (>= 7.0.50~),
+ libgazebo4-dev,
+ ros-indigo-std-msgs,
+ ros-indigo-common-msgs,
+ ros-indigo-image-common,
+ ros-indigo-geometry,
+ ros-indigo-geometry-experimental,
+ ros-indigo-joint-state-publisher,
+ ros-indigo-image-pipeline,
+ ros-indigo-image-transport-plugins,
+ ros-indigo-actionlib,
+ ros-indigo-cmake-modules,
+ ros-indigo-control-msgs,
+ ros-indigo-image-transport,
+ ros-indigo-nav-msgs,
+ ros-indigo-nodelet-topic-tools,
+ ros-indigo-controller-manager,
+ ros-indigo-robot-state-publisher,
+ ros-indigo-ros,
+ ros-indigo-rosbuild,
+ ros-indigo-tf,
+ ros-indigo-trajectory-msgs,
+ ros-indigo-gazebo4-plugins,
+ osrf-common-prerelease (>=1.1.0-4),
+ sandia-hand-prerelease (>=5.3.0)
+Homepage: http://theroboticschallenge.org
+
+Package: drcsim-prerelease
+Architecture: any
+Section: devel
+Priority: extra
+Depends: libgazebo4-dev,
+ ros-indigo-std-msgs,
+ ros-indigo-common-msgs,
+ ros-indigo-image-common,
+ ros-indigo-geometry,
+ ros-indigo-controller-manager,
+ ros-indigo-geometry-experimental,
+ ros-indigo-joint-state-publisher,
+ ros-indigo-image-transport-plugins,
+ ros-indigo-actionlib,
+ ros-indigo-cmake-modules,
+ ros-indigo-control-msgs,
+ ros-indigo-image-transport,
+ ros-indigo-nav-msgs,
+ ros-indigo-nodelet-topic-tools,
+ ros-indigo-robot-state-publisher,
+ ros-indigo-ros,
+ ros-indigo-rosbuild,
+ ros-indigo-tf,
+ ros-indigo-trajectory-msgs,
+ ros-indigo-xacro,
+ ros-indigo-gazebo4-ros,
+ ros-indigo-gazebo4-plugins,
+ ros-indigo-gazebo4-msgs,
+ osrf-common-prerelease (>=1.1.0-4),
+ sandia-hand-prerelease (>=5.3.0),
+ ${misc:Depends}
+Conflicts: drcsim, 
+  drcsim-nightly
+Description: Darpa Robotics Challenge (DRC) simulator
+ Building upon Gazebo simulator, the DRC Simulator, or DRCSim, comprises additional worlds, models, and code that is specifically required to simulate the DRC domain.
+Homepage: http://theroboticschallenge.org
+
+Package: drcsim-prerelease-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends:
+    drcsim-prerelease (= ${binary:Version}), ${misc:Depends}
+Conflicts: drcsim-dbg, 
+  drcsim-nightly-dbg
+Description: debugging symbols for drcsim
+ This package contains the debugging symbols for DRC simulator

@@ -15,28 +15,34 @@ export DH_OPTIONS=-v
 
 override_dh_auto_configure:
 	# Pull in ROS and Gazebo configuration
-	. "/opt/ros/groovy/setup.sh" && \
+	. "/opt/ros/indigo/setup.sh" && \
 	. "/usr/share/gazebo/setup.sh" && \
 	dh_auto_configure -- \
 		-DCMAKE_BUILD_TYPE=RelWithDebInfo \
                 -DCATKIN_BUILD_BINARY_PACKAGE="1" \
-                -DCMAKE_INSTALL_PREFIX="/opt/ros/groovy" \
-                -DCMAKE_PREFIX_PATH="/opt/ros/groovy"
+                -DCMAKE_INSTALL_PREFIX="/opt/ros/indigo" \
+                -DCMAKE_PREFIX_PATH="/opt/ros/indigo"
 
 override_dh_auto_build:
-	. "/opt/ros/groovy/setup.sh" && \
+	. "/opt/ros/indigo/setup.sh" && \
 	. "/usr/share/gazebo/setup.sh" && \
 	rosdep update && \
 	dh_auto_build -- VERBOSE=1
 
 override_dh_shlibdeps:
+	# Ignore missing information since:
+	# couldn't find library 
+	# ../../drcsim_model_resources/AtlasSimInterface_1.1.1/lib64/libAtlasSimInterface.so.1.1.1 
+	# needed by debian/drcsim-prerelease/opt/ros/indigo/lib/drcsim_gazebo_ros_plugins/plugins/libAtlasPlugin.so 
 	# Pull in ROS and Gazebo configuration
-	. "/opt/ros/groovy/setup.sh" && \
-	. "/usr/share/gazebo/setup.sh" && \
-	dh_shlibdeps
+	#. "/opt/ros/indigo/setup.sh" && \
+	#. "/usr/share/gazebo/setup.sh" && \
+	# LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):$(PWD)/debian/drcsim-prerelease/opt/ros/indigo/lib/AtlasSimInterface_1.1.1/:$(PWD)/debian/drcsim-prerelease/opt/ros/indigo/lib/AtlasSimInterface_2.10.2/ dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
+	true
 
 override_dh_auto_install:
-	dh_auto_install --destdir=debian/drcsim-groovy
+	. "/opt/ros/indigo/setup.sh" && \
+	dh_auto_install --destdir=debian/drcsim-prerelease
 
 override_dh_auto_test:
 	echo -- Skipping tests
@@ -44,4 +50,4 @@ override_dh_auto_test:
 	true
 
 override_dh_strip:
-	dh_strip --dbg-package=drcsim-groovy-dbg
+	dh_strip --dbg-package=drcsim-prerelease-dbg
