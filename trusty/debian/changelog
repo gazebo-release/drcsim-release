@@ -1,3 +1,9 @@
+drcsim (4.0.0-2~precise) precise; urgency=medium
+
+  * drcsim 4.0.0-2 release
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Sat, 13 Sep 2014 01:21:40 -0500
+
 drcsim (4.0.0-1~precise) precise; urgency=medium
 
   * drcsim 4.0.0-1 release
