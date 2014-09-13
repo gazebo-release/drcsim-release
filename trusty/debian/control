@@ -27,8 +27,8 @@ Build-Depends: cmake,
  ros-indigo-tf,
  ros-indigo-trajectory-msgs,
  ros-indigo-gazebo4-plugins,
- osrf-common,
- sandia-hand
+ osrf-common (>1.1.0-3),
+ sandia-hand (>5.2.0-3)
 Homepage: http://theroboticschallenge.org
 
 Package: drcsim
@@ -59,8 +59,8 @@ Depends: libgazebo4-dev,
  ros-indigo-gazebo4-ros,
  ros-indigo-gazebo4-plugins,
  ros-indigo-gazebo4-msgs,
- osrf-common,
- sandia-hand
+ osrf-common (>1.1.0-3),
+ sandia-hand (>5.2.0-3),
  ${misc:Depends}
 Conflicts: drcsim-prerelease, 
   drcsim-nightly
