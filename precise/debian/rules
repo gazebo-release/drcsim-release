@@ -10,6 +10,14 @@
 export DH_VERBOSE=1
 export DH_OPTIONS=-v
 
+DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
+
+ATLAS_INTERFACE=
+
+ifeq ($(DEB_HOST_ARCH),i386)
+ATLAS_INTERFACE = -DUSE_ATLASSIMINTERFACE_1_BINARY_EXISTS:BOOL=False
+endif
+
 %:
 	dh  $@
 
@@ -21,7 +29,8 @@ override_dh_auto_configure:
 		-DCMAKE_BUILD_TYPE=RelWithDebInfo \
                 -DCATKIN_BUILD_BINARY_PACKAGE="1" \
                 -DCMAKE_INSTALL_PREFIX="/opt/ros/hydro" \
-                -DCMAKE_PREFIX_PATH="/opt/ros/hydro"
+                -DCMAKE_PREFIX_PATH="/opt/ros/hydro" \
+		$(ATLAS_INTERFACE)
 
 override_dh_auto_build:
 	. "/opt/ros/hydro/setup.sh" && \
