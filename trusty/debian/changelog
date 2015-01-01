@@ -1,3 +1,9 @@
+drcsim-prerelease (4.2.3-1~trusty) trusty; urgency=medium
+
+  * drcsim-prerelease 4.2.3-1 release
+
+ -- Ian Chen <ichen@osrfoundation.org>  Mon, 31 Dec 2014 16:19:00 -0800
+
 drcsim-prerelease (4.2.2-1~trusty) trusty; urgency=medium
 
   * drcsim-prerelease 4.2.2-1 release
