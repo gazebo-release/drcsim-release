@@ -1,3 +1,9 @@
+drcsim-prerelease (4.2.4-1~precise) precise; urgency=medium
+
+  * drcsim-prerelease 4.4.1 release
+
+ -- Nate Koenig <nate@osrfoundation.org>  Wed, 07 Jan 2015 14:16:32 -0800
+
 drcsim-prerelease (4.2.3-1~precise) precise; urgency=medium
 
   * drcsim-prerelease 4.2.3-1 release
