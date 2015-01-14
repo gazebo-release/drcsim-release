@@ -1,6 +1,12 @@
+drcsim-prerelease (4.2.5-1~trusty) trusty; urgency=medium
+
+  * drcsim-prerelease 4.2.5-1 release
+
+ -- Nate Koenig <nate@osrfoundation.org>  Wed, 14 Jan 2015 10:52:10 -0800
+
 drcsim-prerelease (4.2.4-1~trusty) trusty; urgency=medium
 
-  * drcsim-prerelease 4.2.4 release
+  * drcsim-prerelease 4.2.4-1 release
 
  -- Nate Koenig <nate@osrfoundation.org>  Wed, 07 Jan 2015 14:16:32 -0800
 
