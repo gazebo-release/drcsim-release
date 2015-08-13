@@ -1,6 +1,6 @@
-drcsim-prerelease (5.1.0~precise) precise; urgency=medium
+drcsim-prerelease (5.1.0-1~precise) precise; urgency=medium
 
-  * drcsim-prerelease 5.1.0 release
+  * drcsim-prerelease 5.1.0-1 release
 
  -- Jose Luis Rivero <jrivero@osrfoundation.org>  Thu, 13 Aug 2015 20:25:09 +0200
 
