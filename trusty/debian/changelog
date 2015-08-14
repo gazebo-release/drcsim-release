@@ -1,3 +1,9 @@
+drcsim-prerelease (5.1.1-1~trusty) trusty; urgency=medium
+
+  * drcsim-prerelease 5.1.1-1 release
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Fri, 14 Aug 2015 17:04:55 +0200
+
 drcsim-prerelease (5.1.0-1~trusty) trusty; urgency=medium
 
   * drcsim-prerelease 5.1.0-1 release
