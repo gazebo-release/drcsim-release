@@ -60,6 +60,7 @@ Depends: libgazebo4-dev,
  ros-indigo-gazebo4-plugins,
  ros-indigo-gazebo4-msgs,
  ros-indigo-laser-assembler,
+ ros-indigo-stereo-image-proc,
  osrf-common (>1.1.0-3),
  sandia-hand (>5.2.0-3),
  ${misc:Depends}
